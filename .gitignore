@@ -1,0 +1,12 @@
+.vagrant/
+*.docx
+*.pdf
+*.log
+.env
+.env.*
+*.key
+*.pem
+presentation-local/
+.codex-resume.md
+Thumbs.db
+.DS_Store

@@ -1,0 +1,6 @@
+## Gezielte Regeln; bewusst kein Voll-Audit von /etc zur Vermeidung von Log-Flut.
+-w /etc/passwd -p wa -k identity
+-w /etc/group -p wa -k identity
+-w /etc/shadow -p wa -k identity
+-w /etc/ssh/ -p wa -k ssh_config
+-w /opt/defense-in-depth/monitored/ -p wa -k did_demo

@@ -1,0 +1,14 @@
+[sshd]
+enabled = true
+port = ssh
+backend = systemd
+filter = sshd
+maxretry = 3
+findtime = 60
+bantime = 30
+usedns = no
+ignoreip = 127.0.0.1/8 ::1 10.0.2.2
+
+# Fail2ban verwaltet eine eigene nftables-Tabelle. Die statische Tabelle
+# "defense_in_depth" wird dadurch weder ersetzt noch geleert.
+banaction = nftables-multiport
